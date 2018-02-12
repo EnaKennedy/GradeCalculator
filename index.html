@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grade Calculator</title>
+    <link rel="stylesheet" type="text/css" href="sheet.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<div id="all">
+    <h1 class="title">Grade Calculator</h1>
+    <table border="1" align="center">
+        <tr>
+            <th> </th>
+            <th id="Homework">Homework</th>
+            <th id="Quizzes">Quizzes</th>
+            <th id="Tests">Tests</th>
+            <th id="Midterm">Midterm</th>
+        </tr>
+        <tr>
+            <td class="name">Grades</td>
+            <td><input type="text" id="HomeworkGrades" value="50,60,45,23" size="12"></td>
+            <td><input type="text" id="QuizGrades" value="87,56" size="10"></td>
+            <td><input type="text" id="TestGrades" value="34,57" size="10"></td>
+            <td><input type="text" id="MidtermGrade" value="79" size="10"></td>
+        </tr>
+        <tr>
+            <td class="name">Weight</td>
+            <td><input type="text" id="HomeworkWeight" value="20" size="12"></td>
+            <td><input type="text" id="QuizWeight" value="20" size="10"></td>
+            <td><input type="text" id="TestWeight" value="20" size="10"></td>
+            <td><input type="text" id="MidtermWeight" value="15" size="10"></td>
+        </tr>
+    </table>
+    <button class="button" onClick="calculateCurrentGrade()">Calculate Current Grade!</button>
+    <div class="output" id="output3"></div>
+    <h2 class="grade">Your Current Grade Is:</h2>
+    <div class="output" id="output"></div>
+    <button class="button" onClick="clearOne()">Clear</button>
+    <h1 class="title">Finals Calculator</h1>
+    <table border="1" align="center">
+        <tr>
+            <th>Current Grade</th>
+            <th>Final Exam Weight</th>
+            <th>Final Grade Desired</th>
+        </tr>
+        <tr>
+            <td><input type="text" id="CurrentGrade" value="58.86" size="21"></td>
+            <td><input type="text" id="FinalWeight" value="25" size="21"></td>
+            <td><input type="text" id="GradeDesired" value="70" size="22"></td>
+        </tr>
+    </table>
+    <button class="button" onClick="calculateGradeNeeded()">Calculate Grade You Need!</button>
+    <h2 class="grade">The Grade You Need Is A:</h2>
+    <div class="output" id="output2"></div>
+    <button class="button" onClick="clearTwo()">Clear</button>
+</div>
+
+</body>
+</html>
